@@ -2,7 +2,7 @@
 
 Removes the background box from map notes.
 
-![Preview](backgroundless-pins-preview.webm)
+![Preview](backgroundless-pins-preview.gif)
 
 ## License
 
