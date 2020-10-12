@@ -1,5 +1,11 @@
 # CHANGELOG
 
+## [1.2.0] 2020-10-12
+
+### ADDED
+
+- Allow the background to be toggled on or off on a per-note basis. Defaults to off.
+
 ## [1.0.1] 2020-10-04
 
 Ensure compatibility with foundry 0.7.3

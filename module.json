@@ -2,7 +2,7 @@
 	"name": "backgroundless-pins",
 	"title": "Backgroundless Pins",
 	"description": "Removes the background from map notes",
-	"version": "1.0.1rc",
+	"version": "1.2.0",
 	"author": "Cole Schultz (cole#9640)",
 	"esmodules": [
 		"backgroundless-pins.js"
@@ -11,8 +11,8 @@
 	"compatibleCoreVersion": "0.7.3",
 	"url": "https://github.com/schultzcole/FVTT-Backgroundless-Pins",
 	"manifest": "https://raw.githubusercontent.com/schultzcole/FVTT-Backgroundless-Pins/master/module.json",
-	"download": "https://github.com/schultzcole/FVTT-Backgroundless-Pins/archive/1.0.1rc.zip",
-	"license": "https://github.com/schultzcole/FVTT-Backgroundless-Pins/blob/1.0.1rc/LICENSE",
-	"readme": "https://github.com/schultzcole/FVTT-Backgroundless-Pins/blob/1.0.1rc/README.md",
-	"changelog": "https://github.com/schultzcole/FVTT-Backgroundless-Pins/blob/1.0.1rc/CHANGELOG.md"
+	"download": "https://github.com/schultzcole/FVTT-Backgroundless-Pins/archive/1.2.0.zip",
+	"license": "https://github.com/schultzcole/FVTT-Backgroundless-Pins/blob/1.2.0/LICENSE",
+	"readme": "https://github.com/schultzcole/FVTT-Backgroundless-Pins/blob/1.2.0/README.md",
+	"changelog": "https://github.com/schultzcole/FVTT-Backgroundless-Pins/blob/1.2.0/CHANGELOG.md"
 }
