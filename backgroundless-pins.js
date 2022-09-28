@@ -20,8 +20,8 @@ function getIconData(note) {
     const tint = isV10OrLater()
         ? Color.from(note.document.texture.tint || null)
         : note.data.iconTint
-        ? colorStringToHex(note.data.iconTint)
-        : null;
+            ? colorStringToHex(note.data.iconTint)
+            : null;
 
     const texture = isV10OrLater() ? note.document.texture.src : note.data.icon;
 
@@ -30,7 +30,7 @@ function getIconData(note) {
 
 Hooks.on("renderNoteConfig", (noteConfig, html, _) => {
     const hasBackground = noteConfig.document.getFlag("backgroundless-pins", "hasBackground") ?? false;
-    const iconTintGroup = html.find(isV10OrLater() ? '[name="texture.tint"]' : '[name="iconTint"]').closest(".form-group");
+    const iconTintGroup = html.find("[name='texture.tint']").closest(".form-group");
     iconTintGroup.after(`
         <div class="form-group">
             <label for="flags.backgroundless-pins.hasBackground">Show Background?</label>
