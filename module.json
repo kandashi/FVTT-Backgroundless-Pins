@@ -1,17 +1,31 @@
 {
+	"id": "backgroundless-pins",
 	"name": "backgroundless-pins",
 	"title": "Backgroundless Pins",
 	"description": "Removes the background from map notes",
 	"version": "1.2.01",
 	"authors": [
-		"Cole Schultz (cole#9640)",
-		"Kandashi"
+		{
+			"name": "Cole Schultz",
+			"discord": "cole#9640"
+		},
+		{
+			"name": "Kandashi"
+		},
+		{
+			"name": "ghost",
+			"discord": "ghost#2000"
+		}
 	],
 	"esmodules": [
 		"backgroundless-pins.js"
 	],
 	"minimumCoreVersion": "9",
-	"compatibleCoreVersion": "9",
+	"compatibleCoreVersion": "10",
+	"compatibility": {
+		"minimum": "9",
+		"verified": "10"
+	},
 	"url": "This is auto replaced",
 	"manifest": "This is auto replaced",
 	"download": "This is auto replaced"
