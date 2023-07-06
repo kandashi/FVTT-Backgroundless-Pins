@@ -45,6 +45,14 @@ export class BackgroundlessControlIcon extends ControlIcon {
      * Override ControlIcon#draw to remove drawing of the background.
      */
     async draw() {
+        if (isv11OrLater()) {
+            return this.drawV11();
+        } else {
+            return this.drawV10();
+        }
+    }
+
+    async drawV10() {
         // Load the icon texture
         this.texture = this.texture ?? (await loadTexture(this.iconSrc));
 
@@ -65,8 +73,32 @@ export class BackgroundlessControlIcon extends ControlIcon {
         this.icon.tint = Number.isNumeric(this.tintColor) ? this.tintColor : 0xffffff;
         return this;
     }
+
+    async drawV11() {
+        // Don't draw a destroyed Control
+        if (this.destroyed) return this;
+
+        // Load the icon texture
+        this.texture = this.texture ?? await loadTexture(this.iconSrc);
+
+        // Set the icon texture
+        this.icon.texture = this.texture;
+
+        // Set the icon width and height
+        this.icon.width = this.icon.height = this.size;
+
+        // Hide the background
+        this.bg.visible = false;
+
+        // Refresh
+        return this.refresh();
+    }
+}
+
+function isv11OrLater() {
+    return game.data.version >= 11;
 }
 
 function isV10OrLater() {
-    return game.release.generation >= 10;
+    return game.release.generation = 10;
 }
